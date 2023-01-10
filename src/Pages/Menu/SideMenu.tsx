@@ -7,24 +7,22 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
     menuImage: {
             width: '120px',
-
-
-//         width: '120px',
-//   height: 120px;
-//   overflow: hidden;
-//   display: inline-block;
-//   vertical-align: top;
-//   border-radius: 50%;
-//   border: 5px solid #fff;
+            height: '120px',
+            overflow: 'hidden',
+            display: 'inline-block',
+            verticalAlign: 'top',
+            borderRadius: '50%',
+            border: '5px solid #fff'
     }
 })
 
 
 const SideMenuBar = () => {
-    return ( <Box width={'250px'} position={'fixed'} bottom={0} top={0} backgroundColor={'#0c0c14'}>
+    const classes = useStyles();
+    return ( <Box width={'250px'} position={'fixed'} bottom={0} top={0} backgroundColor={"menuBarColor"}>
     <Box height={'calc(100% - 50px);'}>
         <Box textAlign={'center'} position={'relative'} padding={'65px 25px 25px'}>
-            <Box textColor={"#ffffff"}>
+            <Box className={classes.menuImage}>
                 logo
             </Box>
         </Box>
