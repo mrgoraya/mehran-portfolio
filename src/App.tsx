@@ -1,12 +1,13 @@
 import React from "react"
 import {
   ChakraProvider,
-  theme,
 } from "@chakra-ui/react"
-import SideMenuBar from "./Pages/Menu/SideMenu"
+import SideMenuBar from "./Pages/menu/SideMenu"
+import customeTheme from "./themes/theme"
+
 
 export const App = () => (
-  <ChakraProvider theme={theme}>
+  <ChakraProvider theme={customeTheme}>
     <SideMenuBar/>
   </ChakraProvider>
 )
