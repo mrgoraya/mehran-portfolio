@@ -1,10 +1,10 @@
 import React from 'react';
-import { portfolioOwnerName } from '../../components/static';
-
 import { Box, Heading, Image, List, ListItem } from '@chakra-ui/react';
 import { createUseStyles } from 'react-jss';
 
-import _mehranImage from '../../assets/mehran.png';
+import { portfolioOwnerName } from '../utils/static';
+import mehranImage from '../assets/mehran.png';
+
 
 const useStyles = createUseStyles({
     menuHeaderTop: {
@@ -56,7 +56,7 @@ const SideMenuBar = () => {
     <Box height={'calc(100% - 50px);'}>
         <Box className={classes.menuHeaderTop}>
             <Box className={classes.menuImage}>
-                <Image src={_mehranImage}></Image>
+                <Image src={mehranImage}></Image>
             </Box>
             <Heading as={'h5'} size={'sm'} className={classes.menuText}>
                 {portfolioOwnerName}
