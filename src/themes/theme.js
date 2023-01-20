@@ -8,7 +8,8 @@ const customeTheme = extendTheme({
     //light / dark mode configuration
   },
   colors: {
-    menuBarColor: "#0c0c14",
+    menuBarColorDark: "#0c0c14",
+    menuBarColorLight: "#f7f7ff",
   },
 });
 
