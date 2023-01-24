@@ -1,9 +1,9 @@
 
 import {AiOutlineHome} from 'react-icons/ai'
 import {FaRegIdBadge} from 'react-icons/fa'
-import {GrBusinessService} from 'react-icons/gr'
+import {BsCardHeading} from 'react-icons/bs'
 import {BsBookmarks} from 'react-icons/bs'
-import {GrBlog} from 'react-icons/gr'
+import {FaBlogger} from 'react-icons/fa'
 import {BsMap} from 'react-icons/bs'
 
 import {FaFacebookF} from 'react-icons/fa'
@@ -12,17 +12,17 @@ import {FaInstagram} from 'react-icons/fa'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {FaPinterest} from 'react-icons/fa'
 
-
+import { routes } from './routes'
 
 export const portfolioOwnerName: string = 'Mehran Rasheed';
 
 export const sideMenuTabs: Array<Object> = [
-    {id: 1, name: 'Home', icon: AiOutlineHome},
-    {id: 2, name: 'About Me', icon: FaRegIdBadge},
-    {id: 3, name: 'Services', icon: GrBusinessService},
-    {id: 4, name: 'Portfolio', icon: BsBookmarks},
-    {id: 5, name: 'Blogs', icon: GrBlog},
-    {id: 6, name: 'Contact Me', icon: BsMap},
+    {id: 1, name: 'Home', icon: AiOutlineHome, path: routes.Home },
+    {id: 2, name: 'About Me', icon: FaRegIdBadge, path: routes.AboutMe},
+    {id: 3, name: 'Services', icon: BsCardHeading, path: routes.Services},
+    {id: 4, name: 'Portfolio', icon: BsBookmarks, path: routes.Portfolio},
+    {id: 5, name: 'Blogs', icon: FaBlogger, path: routes.Blogs},
+    {id: 6, name: 'Contact Me', icon: BsMap, path: routes.ContactMe},
 ]
 
 export const sideMenuSocials: Array<Object> = [

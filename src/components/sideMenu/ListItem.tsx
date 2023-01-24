@@ -2,6 +2,7 @@ import { HStack, Icon, ListItem, Text } from '@chakra-ui/react';
 import React from 'react'
 
 import {AiOutlineHome} from 'react-icons/ai'
+import { NavLink } from 'react-router-dom';
 
 
 const menuListItems = {
@@ -21,11 +22,14 @@ const SideMenuListItem = (props:any) => {
 
     const {sideMenuTab, onClick} = props;
 
-    return ( <ListItem width={'100%'} border={'1px solid rgba(11, 11, 19, 0.03)'}>
+    return ( <ListItem width={'100%'} borderTop={sideMenuTab.id === 1 ? '' : '1px solid rgba(11, 11, 19, 0.03)'}>
+    <NavLink to={sideMenuTab.path}>
     <HStack sx={menuListItems} onClick={()=>onClick(sideMenuTab.name)} _hover={{color: '#2fbf71', cursor: 'pointer'}}>
         <Icon fontSize={'1.45rem'} fontWeight={'300'} ><sideMenuTab.icon/></Icon>
         <Text  paddingLeft={'0.625rem'}>{sideMenuTab.name}</Text>
     </HStack>
+    </NavLink>
+    
 </ListItem> );
 }
  
