@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, HStack, List } from "@chakra-ui/react";
 
-import SideMenuHeaderImage from "../components/sideMenu/headerImage";
-import SideMenuHeaderText from "../components/sideMenu/headerText";
+import SideMenuHeaderText from "../components/sideMenu/HeaderText";
 import SideMenuListItem from "../components/sideMenu/ListItem";
 import MenuBarFooterSocials from "../components/sideMenu/FooterSocials";
 import { sideMenuTabs } from "../utils/static";
 import { sideMenuSocials } from "../utils/static";
+import SideMenuHeaderImage from "../components/sideMenu/HeaderImage";
 
 const menuHeaderTop = {
   textAlign: "center",
