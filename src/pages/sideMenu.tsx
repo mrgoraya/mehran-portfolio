@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, HStack, List } from "@chakra-ui/react";
 
 import SideMenuHeaderText from "../components/sideMenu/HeaderText";
@@ -11,18 +10,18 @@ import SideMenuHeaderImage from "../components/sideMenu/HeaderImage";
 const menuHeaderTop = {
   textAlign: "center",
   position: "relative",
-  padding: "65px 25px 25px",
+  padding: "4rem 1.5rem 1.5rem",
   "&:after": {
     content: '""',
     position: "absolute",
-    top: "-180px",
-    left: "-50px",
+    top: "-11.25rem",
+    left: "-3.125rem",
     right: "0",
     bottom: "0",
     zIndex: "-1",
     borderRadius: "0 0 50% 50%",
-    width: "350px",
-    height: "350px",
+    width: "21.875rem",
+    height: "21.875rem",
     background: "#2fbf71",
   },
 };
@@ -38,7 +37,7 @@ const SideMenuBar = () => {
 
   return (
     <Box
-      width={"250px"}
+      width={"16.625rem"}
       position={"fixed"}
       bottom={0}
       top={0}
@@ -49,13 +48,13 @@ const SideMenuBar = () => {
           <SideMenuHeaderImage />
           <SideMenuHeaderText />
         </Box>
-        <List paddingTop={"45px"} paddingBottom={"45px"}>
+        <List paddingTop={"2.8rem"} paddingBottom={"2.8rem"}>
           {sideMenuTabs.map((tab) => {
             return <SideMenuListItem sideMenuTab={tab} onClick={handleTabs} />;
           })}
         </List>
       </Box>
-      <HStack justifyContent={"center"} padding={"12px 0"}>
+      <HStack justifyContent={"center"} padding={"0.75rem 0"}>
         <Box>
           {sideMenuSocials.map((obj) => {
             return (
