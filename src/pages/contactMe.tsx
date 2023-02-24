@@ -1,8 +1,8 @@
-import React from 'react';
-import { Box } from '@chakra-ui/react';
+import React from "react";
+import { Box } from "@chakra-ui/react";
 
 const ContactMe = () => {
-    return ( <Box>Contact Me</Box> );
-}
- 
+  return <Box>Contact Me</Box>;
+};
+
 export default ContactMe;
