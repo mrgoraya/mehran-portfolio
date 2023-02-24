@@ -50,16 +50,26 @@ const SideMenuBar = () => {
           <SideMenuHeaderText />
         </Box>
         <List paddingTop={"2.8rem"} paddingBottom={"2.8rem"}>
-          {sideMenuTabs.map((tab) => {
-            return <SideMenuListItem sideMenuTab={tab} onClick={handleTabs} />;
+          {sideMenuTabs.map((tab, index) => {
+            return (
+              <SideMenuListItem
+                key={index}
+                sideMenuTab={tab}
+                onClick={handleTabs}
+              />
+            );
           })}
         </List>
       </Box>
       <HStack justifyContent={"center"} padding={"0.75rem 0"}>
         <Box>
-          {sideMenuSocials.map((obj) => {
+          {sideMenuSocials.map((obj, index) => {
             return (
-              <MenuBarFooterSocials socials={obj} onClick={handleSocials} />
+              <MenuBarFooterSocials
+                key={index}
+                socials={obj}
+                onClick={handleSocials}
+              />
             );
           })}
         </Box>
