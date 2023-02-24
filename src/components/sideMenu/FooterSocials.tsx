@@ -1,14 +1,15 @@
 import { Icon } from "@chakra-ui/react";
-import * as React from "react";
+
+import { color } from "../../utils/color";
 
 const MenuBarFooterSocials = (props: any) => {
   const { socials, onClick } = props;
   return (
     <Icon
-      color={"#0b0b13"}
+      color={color.black}
       fontSize={"1.3rem"}
       marginRight={"0.5rem"}
-      _hover={{ color: "#2fbf71", cursor: "pointer" }}
+      _hover={{ color: color.green, cursor: "pointer" }}
       onClick={() => onClick(socials.name)}
       transition={"ease all 0.25s"}
     >

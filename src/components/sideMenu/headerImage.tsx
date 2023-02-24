@@ -4,8 +4,8 @@ import { Box, Image } from "@chakra-ui/react";
 import mehranImage from "../../assets/mehran.png";
 
 const menuImage = {
-  width: "120px",
-  height: "120px",
+  width: "7.5rem",
+  height: "7.5rem",
   overflow: "hidden",
   display: "inline-block",
   verticalAlign: "top",

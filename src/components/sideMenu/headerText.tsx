@@ -10,7 +10,7 @@ const menuText = {
   textTransform: "uppercase",
   fontSize: "0.875rem",
   letterSpacing: "0.1875rem",
-  color: color.black,
+  color: color.lightBlack,
 };
 
 const SideMenuHeaderText = () => {
