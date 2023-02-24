@@ -1,6 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
-const customeTheme = extendTheme({
+const customTheme = extendTheme({
   components: {
     //components
   },
@@ -13,4 +13,4 @@ const customeTheme = extendTheme({
   },
 });
 
-export default customeTheme;
+export default customTheme;

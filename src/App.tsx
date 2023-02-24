@@ -3,7 +3,7 @@ import { Box, ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter, NavLink, Routes } from "react-router-dom";
 import { Route } from "react-router";
 
-import customeTheme from "./themes/theme";
+import customTheme from "./themes/theme";
 import SideMenuBar from "./pages/sideMenu";
 import HomePage from "./pages/home";
 import { routes } from "./utils/routes";
@@ -14,7 +14,7 @@ import Blog from "./pages/blog";
 import ContactMe from "./pages/contactMe";
 
 export const App = () => (
-  <ChakraProvider theme={customeTheme}>
+  <ChakraProvider theme={customTheme}>
     <SideMenuBar />
     <Box
       left={"15.625rem"}
