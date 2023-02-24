@@ -3,6 +3,7 @@ import React from "react";
 
 import { AiOutlineHome } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import { color } from "../../utils/color";
 
 const menuListItems = {
   margin: "0",
@@ -29,7 +30,7 @@ const SideMenuListItem = (props: any) => {
         <HStack
           sx={menuListItems}
           onClick={() => onClick(sideMenuTab.name)}
-          _hover={{ color: "#2fbf71", cursor: "pointer" }}
+          _hover={{ color: color.green, cursor: "pointer" }}
         >
           <Icon fontSize={"1.45rem"} fontWeight={"300"}>
             <sideMenuTab.icon />

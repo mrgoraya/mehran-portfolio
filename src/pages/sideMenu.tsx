@@ -6,6 +6,7 @@ import MenuBarFooterSocials from "../components/sideMenu/FooterSocials";
 import { sideMenuTabs } from "../utils/static";
 import { sideMenuSocials } from "../utils/static";
 import SideMenuHeaderImage from "../components/sideMenu/HeaderImage";
+import { color } from "../utils/color";
 
 const menuHeaderTop = {
   textAlign: "center",
@@ -22,7 +23,7 @@ const menuHeaderTop = {
     borderRadius: "0 0 50% 50%",
     width: "21.875rem",
     height: "21.875rem",
-    background: "#2fbf71",
+    background: color.green,
   },
 };
 

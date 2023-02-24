@@ -2,14 +2,15 @@ import * as React from "react";
 import { Heading } from "@chakra-ui/react";
 
 import { portfolioOwnerName } from "../../utils/static";
+import { color } from "../../utils/color";
 
 const menuText = {
-  margin: "23px 0 0",
+  margin: "1.43rem 0 0",
   fontWeight: "400",
   textTransform: "uppercase",
-  fontSize: "14px",
-  letterSpacing: "3px",
-  color: "#0c0c14",
+  fontSize: "0.875rem",
+  letterSpacing: "0.1875rem",
+  color: color.black,
 };
 
 const SideMenuHeaderText = () => {
