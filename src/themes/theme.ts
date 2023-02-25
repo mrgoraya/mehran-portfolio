@@ -11,6 +11,9 @@ const customTheme = extendTheme({
     menuBarColorDark: "#0c0c14",
     menuBarColorLight: "#f7f7ff",
   },
+  fonts: {
+    heading: "Dancing Script",
+  },
 });
 
 export default customTheme;

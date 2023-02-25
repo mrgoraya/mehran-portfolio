@@ -1,9 +1,7 @@
-import React from "react";
-import { Box, ChakraProvider } from "@chakra-ui/react";
-import { BrowserRouter, NavLink, Routes } from "react-router-dom";
+import { Box } from "@chakra-ui/react";
+import { Routes } from "react-router-dom";
 import { Route } from "react-router";
 
-import customTheme from "./themes/theme";
 import SideMenuBar from "./pages/sideMenu";
 import HomePage from "./pages/home";
 import { routes } from "./utils/routes";
@@ -12,9 +10,10 @@ import Services from "./pages/services";
 import Portfolio from "./pages/portfolio";
 import Blog from "./pages/blog";
 import ContactMe from "./pages/contactMe";
+import { Fragment } from "react";
 
 export const App = () => (
-  <ChakraProvider theme={customTheme}>
+  <Fragment>
     <SideMenuBar />
     <Box
       left={"15.625rem"}
@@ -34,5 +33,5 @@ export const App = () => (
         <Route path={"/"} element={<HomePage />} />
       </Routes>
     </Box>
-  </ChakraProvider>
+  </Fragment>
 );

@@ -1,7 +1,5 @@
 import { HStack, Icon, ListItem, Text } from "@chakra-ui/react";
-import React from "react";
 
-import { AiOutlineHome } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { color } from "../../utils/color";
 
