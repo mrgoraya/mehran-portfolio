@@ -1,6 +1,6 @@
 import { Box, HStack, List } from "@chakra-ui/react";
 
-import SideMenuHeaderText from "../components/sideMenu/HeaderText";
+import HeaderText from "../components/sideMenu/HeaderText";
 import SideMenuListItem from "../components/sideMenu/ListItem";
 import MenuBarFooterSocials from "../components/sideMenu/FooterSocials";
 import { sideMenuTabs } from "../utils/static";
@@ -47,7 +47,7 @@ const SideMenuBar = () => {
       <Box height={"calc(100% - 50px);"}>
         <Box sx={menuHeaderTop}>
           <SideMenuHeaderImage />
-          <SideMenuHeaderText />
+          <HeaderText />
         </Box>
         <List paddingTop={"2.8rem"} paddingBottom={"2.8rem"}>
           {sideMenuTabs.map((tab, index) => {

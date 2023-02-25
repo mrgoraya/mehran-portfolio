@@ -12,7 +12,7 @@ const menuText = {
   color: color.lightBlack,
 };
 
-const SideMenuHeaderText = () => {
+const HeaderText = () => {
   return (
     <Heading as={"h4"} size={"sm"} sx={menuText}>
       {portfolioOwnerName}
@@ -20,4 +20,4 @@ const SideMenuHeaderText = () => {
   );
 };
 
-export default SideMenuHeaderText;
+export default HeaderText;
