@@ -6,6 +6,8 @@ const customTheme = extendTheme({
   },
   config: {
     //light / dark mode configuration
+    initialColorMode: "light",
+    useSystemColorMode: false,
   },
   colors: {
     menuBarColorDark: "#0c0c14",

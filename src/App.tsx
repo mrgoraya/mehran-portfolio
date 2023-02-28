@@ -1,16 +1,8 @@
+import { Fragment } from "react";
 import { Box } from "@chakra-ui/react";
-import { Routes } from "react-router-dom";
-import { Route } from "react-router";
 
 import SideMenuBar from "./pages/sideMenu";
-import HomePage from "./pages/home";
-import { routes } from "./utils/routes";
-import AboutMe from "./pages/aboutMe";
-import Services from "./pages/services";
-import Portfolio from "./pages/portfolio";
-import Blog from "./pages/blog";
-import ContactMe from "./pages/contactMe";
-import { Fragment } from "react";
+import AppRoutes from "./routes/AppRoutes";
 
 export const App = () => (
   <Fragment>
@@ -23,15 +15,7 @@ export const App = () => (
     >
       {/* <HomePage/> */}
 
-      <Routes>
-        <Route path={routes.Home} element={<HomePage />} />
-        <Route path={routes.AboutMe} element={<AboutMe />} />
-        <Route path={routes.Services} element={<Services />} />
-        <Route path={routes.Portfolio} element={<Portfolio />} />
-        <Route path={routes.Blogs} element={<Blog />} />
-        <Route path={routes.ContactMe} element={<ContactMe />} />
-        <Route path={"/"} element={<HomePage />} />
-      </Routes>
+      <AppRoutes />
     </Box>
   </Fragment>
 );

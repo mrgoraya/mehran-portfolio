@@ -1,7 +1,7 @@
 import { HStack, Icon, ListItem, Text } from "@chakra-ui/react";
 
 import { NavLink } from "react-router-dom";
-import { color } from "../../utils/color";
+import { color } from "../../styles/color";
 
 const menuListItems = {
   margin: "0",

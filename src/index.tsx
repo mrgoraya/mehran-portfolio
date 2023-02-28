@@ -16,7 +16,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ChakraProvider theme={customTheme}>
-        <ColorModeScript />
+        <ColorModeScript
+          initialColorMode={customTheme.config.initialColorMode}
+        />
         <App />
       </ChakraProvider>
     </BrowserRouter>

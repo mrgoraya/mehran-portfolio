@@ -11,7 +11,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 
-import { routes } from "./routes";
+import { routes } from "../routes/routes";
 import { SideMenuSocial, SideMenuTab } from "./sideMenuInterface";
 
 export const portfolioOwnerName: string = "Mehran Rasheed";

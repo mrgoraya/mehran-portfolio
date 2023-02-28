@@ -1,6 +1,6 @@
 import { Icon, theme } from "@chakra-ui/react";
 
-import { color } from "../../utils/color";
+import { color } from "../../styles/color";
 
 const MenuBarFooterSocials = (props: any) => {
   const { socials, onClick } = props;

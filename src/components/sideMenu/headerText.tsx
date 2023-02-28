@@ -1,7 +1,7 @@
 import { Heading } from "@chakra-ui/react";
 
 import { portfolioOwnerName } from "../../utils/static";
-import { color } from "../../utils/color";
+import { color } from "../../styles/color";
 
 const menuText = {
   margin: "1.43rem 0 0",
