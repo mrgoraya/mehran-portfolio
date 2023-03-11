@@ -1,12 +1,25 @@
-import { Flex, List } from "@chakra-ui/react";
+import { Flex, IconButton, List } from "@chakra-ui/react";
+
 import { color } from "../styles/color";
 import { sideMenuSocials, sideMenuTabs } from "../utils/static";
 import HeaderImage from "../components/sideBar/HeaderImage";
 import HeaderText from "../components/sideBar/HeaderText";
 import SideBarListItems from "../components/sideBar/SideBarListItems";
 import SideBarFooter from "../components/sideBar/SideBarFooter";
+import { FiMenu } from "react-icons/fi";
+import { useState } from "react";
 
 const SideBar = () => {
+  const [navSize, setNavSize] = useState("large");
+
+  const handleNavSize = () => {
+    if (navSize === "small") {
+      setNavSize("large");
+    } else {
+      setNavSize("small");
+    }
+  };
+
   const handleTabs = (name: string) => {
     console.log(name);
   };
@@ -21,9 +34,8 @@ const SideBar = () => {
     >
       <Flex
         flexDir="column"
-        alignItems="center"
+        alignItems="flex-start"
         position="relative"
-        padding="4rem 1.5rem 1.5rem"
         overflow="hidden"
         _after={{
           content: '""',
@@ -39,8 +51,24 @@ const SideBar = () => {
           background: color.green,
         }}
       >
-        <HeaderImage />
-        <HeaderText />
+        <Flex flexDir="column" alignItems="flex-start" as="nav">
+          <IconButton
+            background="none"
+            aria-label=""
+            _hover={{ background: "none" }}
+            icon={<FiMenu />}
+            onClick={handleNavSize}
+          />
+        </Flex>
+        <Flex
+          flexDir="column"
+          alignItems="center"
+          width="100%"
+          padding="2rem 0 1.5rem 0"
+        >
+          <HeaderImage />
+          <HeaderText />
+        </Flex>
       </Flex>
       <Flex>
         <List paddingTop="2.8rem" paddingBottom="2.8rem">
