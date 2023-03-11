@@ -6,10 +6,10 @@ type Icons = {
   icon: IconType;
 };
 
-export interface SideMenuTab extends Icons {
+export interface SideBarTab extends Icons {
   path: string;
 }
 
-export interface SideMenuSocial extends Icons {
+export interface SideBarSocialIcons extends Icons {
   link: string;
 }

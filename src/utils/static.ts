@@ -12,11 +12,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 
 import { routes } from "../routes/routes";
-import { SideMenuSocial, SideMenuTab } from "./sideMenuInterface";
+import { SideBarSocialIcons, SideBarTab } from "./sideBarInterface";
 
 export const portfolioOwnerName: string = "Mehran Rasheed";
 
-export const sideMenuTabs: Array<SideMenuTab> = [
+export const sideMenuTabs: Array<SideBarTab> = [
   { id: 1, name: "Home", icon: AiOutlineHome, path: routes.Home },
   { id: 2, name: "About Me", icon: FaRegIdBadge, path: routes.AboutMe },
   { id: 3, name: "Services", icon: BsCardHeading, path: routes.Services },
@@ -25,7 +25,7 @@ export const sideMenuTabs: Array<SideMenuTab> = [
   { id: 6, name: "Contact Me", icon: BsMap, path: routes.ContactMe },
 ];
 
-export const sideMenuSocials: Array<SideMenuSocial> = [
+export const sideMenuSocials: Array<SideBarSocialIcons> = [
   { id: 1, name: "facebook", icon: FaFacebookF, link: "" },
   { id: 2, name: "twitter", icon: FaTwitter, link: "" },
   { id: 3, name: "instagram", icon: FaInstagram, link: "" },
