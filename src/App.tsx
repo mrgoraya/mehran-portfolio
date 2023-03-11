@@ -8,9 +8,9 @@ import { Box } from "@chakra-ui/react";
 export const App = () => (
   <Fragment>
     <ToggleColorMode />
-    <SideBar />
-    <Box left={"15.625rem"} height={"100%"} width={"calc(100% - 15.625rem)"}>
+    <Box position="absolute" left="17.625rem" height="100%">
       <AppRoutes />
     </Box>
+    <SideBar />
   </Fragment>
 );
