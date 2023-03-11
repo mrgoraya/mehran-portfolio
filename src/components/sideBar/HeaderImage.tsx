@@ -1,4 +1,5 @@
 import { Box, Image } from "@chakra-ui/react";
+
 import mehranImage from "../../assets/mehran.png";
 
 const HeaderImage = () => {

@@ -1,13 +1,13 @@
+import { useState } from "react";
 import { Flex, IconButton, List } from "@chakra-ui/react";
+import { FiMenu } from "react-icons/fi";
 
-import { color } from "../styles/color";
 import { sideMenuSocials, sideMenuTabs } from "../utils/static";
 import HeaderImage from "../components/sideBar/HeaderImage";
 import HeaderText from "../components/sideBar/HeaderText";
 import SideBarListItems from "../components/sideBar/SideBarListItems";
 import SideBarFooter from "../components/sideBar/SideBarFooter";
-import { FiMenu } from "react-icons/fi";
-import { useState } from "react";
+import { color } from "../styles/color";
 
 const SideBar = () => {
   const [navSize, setNavSize] = useState("large");

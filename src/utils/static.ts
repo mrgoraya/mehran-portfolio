@@ -1,22 +1,21 @@
 import { AiOutlineHome } from "react-icons/ai";
-import { FaRegIdBadge } from "react-icons/fa";
-import { BsCardHeading } from "react-icons/bs";
-import { BsBookmarks } from "react-icons/bs";
-import { FaBlogger } from "react-icons/fa";
-import { BsMap } from "react-icons/bs";
-
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa";
+import { BsBookmarks, BsMap, BsCardHeading } from "react-icons/bs";
+import {
+  FaBlogger,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPinterest,
+  FaRegIdBadge,
+} from "react-icons/fa";
 
 import { routes } from "../routes/routes";
 import { SideBarSocialIcons, SideBarTab } from "./sideBarInterface";
 
-export const portfolioOwnerName: string = "Mehran Rasheed";
+export const portfolioOwnerName = "Mehran Rasheed";
 
-export const sideMenuTabs: Array<SideBarTab> = [
+export const sideMenuTabs: SideBarTab[] = [
   { id: 1, name: "Home", icon: AiOutlineHome, path: routes.Home },
   { id: 2, name: "About Me", icon: FaRegIdBadge, path: routes.AboutMe },
   { id: 3, name: "Services", icon: BsCardHeading, path: routes.Services },
@@ -25,7 +24,7 @@ export const sideMenuTabs: Array<SideBarTab> = [
   { id: 6, name: "Contact Me", icon: BsMap, path: routes.ContactMe },
 ];
 
-export const sideMenuSocials: Array<SideBarSocialIcons> = [
+export const sideMenuSocials: SideBarSocialIcons[] = [
   { id: 1, name: "facebook", icon: FaFacebookF, link: "" },
   { id: 2, name: "twitter", icon: FaTwitter, link: "" },
   { id: 3, name: "instagram", icon: FaInstagram, link: "" },
