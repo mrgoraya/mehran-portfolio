@@ -1,11 +1,7 @@
 {
     "enabled": true,
-    "schedule": "weekly",
-    "dry-run": false,
     "automerge": true,
     "packageFile": "package.json",
-    "allowUpgrades": ["patch", "minor"],
-    "ignore": ["node_modules"],
     "filter": {
       "dependencies": true,
       "devDependencies": true
