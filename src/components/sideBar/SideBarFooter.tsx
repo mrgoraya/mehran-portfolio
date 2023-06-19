@@ -5,13 +5,14 @@ import { SideBarSocialIcons } from "../../utils/sideBarInterface";
 
 type SideBarFooterProps = {
   socialIcons: SideBarSocialIcons;
+  navSize: string;
 };
 
-const SideBarFooter = ({ socialIcons }: SideBarFooterProps) => {
+const SideBarFooter = ({ socialIcons, navSize }: SideBarFooterProps) => {
   return (
     <Icon
       fontSize="1.3rem"
-      marginRight="0.5rem"
+      margin={navSize === "small" ? "0 0 0.75rem 0.25rem" : "0 0.5rem 0 0"}
       _hover={{ color: color.green, cursor: "pointer" }}
       transition="ease all 0.25s"
     >

@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Flex, IconButton, List } from "@chakra-ui/react";
+import {
+  Collapse,
+  Flex,
+  IconButton,
+  List,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { FiMenu } from "react-icons/fi";
 
 import { sideMenuSocials, sideMenuTabs } from "../utils/static";
@@ -27,10 +33,11 @@ const SideBar = () => {
     <Flex
       pos="sticky"
       h="100vh"
-      w="16.625rem"
+      w={navSize === "small" ? "4.5rem" : "16.625rem"}
       flexDir="column"
       justifyContent="space-between"
       boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.5)"
+      transition="width 250ms ease"
     >
       <Flex
         flexDir="column"
@@ -41,7 +48,7 @@ const SideBar = () => {
           content: '""',
           position: "absolute",
           top: "-11.25rem",
-          left: "-3.125rem",
+          left: navSize === "small" ? "-8.125rem" : "-3.125rem",
           right: "0",
           bottom: "0",
           zIndex: "-1",
@@ -64,10 +71,10 @@ const SideBar = () => {
           flexDir="column"
           alignItems="center"
           width="100%"
-          padding="2rem 0 1.5rem 0"
+          padding={navSize === "small" ? "6rem 0 1.5rem 0" : "2rem 0 1.5rem 0"}
         >
-          <HeaderImage />
-          <HeaderText />
+          <HeaderImage navSize={navSize} />
+          <HeaderText navSize={navSize} />
         </Flex>
       </Flex>
       <Flex>
@@ -78,15 +85,18 @@ const SideBar = () => {
                 key={sideBarTab.id}
                 sideBarTab={sideBarTab}
                 onClick={handleTabs}
+                navSize={navSize}
               />
             );
           })}
         </List>
       </Flex>
       <Flex p="5%" flexDir="column" w="100%" mb={4} alignItems="center">
-        <Flex flexDir="row">
+        <Flex flexDir={navSize === "small" ? "column" : "row"}>
           {sideMenuSocials.map((obj, index) => {
-            return <SideBarFooter key={index} socialIcons={obj} />;
+            return (
+              <SideBarFooter key={index} socialIcons={obj} navSize={navSize} />
+            );
           })}
         </Flex>
       </Flex>

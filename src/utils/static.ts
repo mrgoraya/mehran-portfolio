@@ -6,7 +6,6 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaPinterest,
   FaRegIdBadge,
 } from "react-icons/fa";
 
@@ -29,5 +28,4 @@ export const sideMenuSocials: SideBarSocialIcons[] = [
   { id: 2, name: "twitter", icon: FaTwitter, link: "" },
   { id: 3, name: "instagram", icon: FaInstagram, link: "" },
   { id: 4, name: "linkdin", icon: FaLinkedinIn, link: "" },
-  { id: 5, name: "pinterest", icon: FaPinterest, link: "" },
 ];

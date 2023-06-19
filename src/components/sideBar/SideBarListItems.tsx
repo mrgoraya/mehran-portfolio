@@ -7,9 +7,14 @@ import { SideBarTab } from "../../utils/sideBarInterface";
 type SideBarListItemProps = {
   sideBarTab: SideBarTab;
   onClick: (name: string) => void;
+  navSize: string;
 };
 
-const SideBarListItems = ({ sideBarTab, onClick }: SideBarListItemProps) => {
+const SideBarListItems = ({
+  sideBarTab,
+  onClick,
+  navSize,
+}: SideBarListItemProps) => {
   return (
     <ListItem
       width="100%"
@@ -28,10 +33,12 @@ const SideBarListItems = ({ sideBarTab, onClick }: SideBarListItemProps) => {
           _hover={{ color: color.green, cursor: "pointer" }}
           onClick={() => onClick(sideBarTab.name)}
         >
-          <Icon fontSize={"1.45rem"} fontWeight={"300"}>
+          <Icon fontSize="1.45rem" fontWeight="300">
             <sideBarTab.icon />
           </Icon>
-          <Text paddingLeft={"0.625rem"}>{sideBarTab.name}</Text>
+          {navSize === "small" ? null : (
+            <Text paddingLeft="0.625rem">{sideBarTab.name}</Text>
+          )}
         </HStack>
       </NavLink>
     </ListItem>

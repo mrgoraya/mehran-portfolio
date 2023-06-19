@@ -2,11 +2,15 @@ import { Box, Image } from "@chakra-ui/react";
 
 import mehranImage from "../../assets/mehran.png";
 
-const HeaderImage = () => {
+type HeaderImageProp = {
+  navSize: string;
+};
+
+const HeaderImage = ({ navSize }: HeaderImageProp) => {
   return (
     <Box
-      width="7.5rem"
-      height="7.5rem"
+      width={navSize === "small" ? "4.5rem" : "7.5rem"}
+      height={navSize === "small" ? "4.5rem" : "7.5rem"}
       overflow="hidden"
       display="inline-block"
       verticalAlign="top"
