@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/github.io/mehran-portfolio/static/css/main.12024f6d.css",
+    "main.js": "/github.io/mehran-portfolio/static/js/main.f5454ec7.js",
+    "static/media/mehran.png": "/github.io/mehran-portfolio/static/media/mehran.9cad743a6ccb2967b18d.png",
+    "static/media/dancing-script-latin-400-normal.woff": "/github.io/mehran-portfolio/static/media/dancing-script-latin-400-normal.ab158ac1cd1663847b4e.woff",
+    "static/media/dancing-script-latin-400-normal.woff2": "/github.io/mehran-portfolio/static/media/dancing-script-latin-400-normal.26d3e7a5932e68dd7531.woff2",
+    "static/media/dancing-script-latin-ext-400-normal.woff": "/github.io/mehran-portfolio/static/media/dancing-script-latin-ext-400-normal.5aaddddd85d4d50425be.woff",
+    "static/media/dancing-script-latin-ext-400-normal.woff2": "/github.io/mehran-portfolio/static/media/dancing-script-latin-ext-400-normal.84a3b34784d28d132f1f.woff2",
+    "static/media/dancing-script-vietnamese-400-normal.woff": "/github.io/mehran-portfolio/static/media/dancing-script-vietnamese-400-normal.d32f32a91972e6711926.woff",
+    "static/media/dancing-script-vietnamese-400-normal.woff2": "/github.io/mehran-portfolio/static/media/dancing-script-vietnamese-400-normal.508eb88407ccebae7414.woff2",
+    "index.html": "/github.io/mehran-portfolio/index.html",
+    "main.12024f6d.css.map": "/github.io/mehran-portfolio/static/css/main.12024f6d.css.map",
+    "main.f5454ec7.js.map": "/github.io/mehran-portfolio/static/js/main.f5454ec7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12024f6d.css",
+    "static/js/main.f5454ec7.js"
+  ]
+}
