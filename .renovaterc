@@ -1,9 +1,5 @@
 {
     "enabled": true,
     "automerge": true,
-    "packageFile": "package.json",
-    "filter": {
-      "dependencies": true,
-      "devDependencies": true
-    }
+    "packageFile": "package.json"
 }
