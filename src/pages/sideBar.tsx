@@ -27,7 +27,7 @@ const SideBar = () => {
     <Flex
       pos="sticky"
       h="100vh"
-      w={navSize === "small" ? "4.5rem" : "16.625rem"}
+      w={navSize === "small" ? "4.5rem" : "25rem"}
       flexDir="column"
       justifyContent="space-between"
       boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.5)"

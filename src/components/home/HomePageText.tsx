@@ -1,4 +1,5 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
+import DownloadCVButton from "./DownloadCVButton";
 
 const HomePageText = () => {
   return (
@@ -25,6 +26,7 @@ const HomePageText = () => {
         proficient in designing and managing cloud-based systems to ensure
         optimal performance and scalability.
       </Text>
+      <DownloadCVButton />
     </Box>
   );
 };

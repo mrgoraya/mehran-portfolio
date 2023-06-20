@@ -3,7 +3,7 @@ import HomePageText from "./HomePageText";
 
 const Home = () => {
   return (
-    <Box display="flex" height="100vh" alignItems="center">
+    <Box display="flex" height="90vh" alignItems="center">
       <HomePageText />
       <Box flex="1" flexBasis="0">
         Picture
