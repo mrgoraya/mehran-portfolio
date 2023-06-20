@@ -16,6 +16,7 @@ const HeaderText = ({ navSize }: HeaderTextProp) => {
       fontSize={navSize === "small" ? "0.75rem" : "1rem"}
       textTransform="uppercase"
       letterSpacing="0.1875rem"
+      transition="width 250ms ease"
     >
       {portfolioOwnerName}
     </Heading>

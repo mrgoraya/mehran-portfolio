@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  Collapse,
-  Flex,
-  IconButton,
-  List,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Flex, IconButton, List } from "@chakra-ui/react";
 import { FiMenu } from "react-icons/fi";
 
 import { sideMenuSocials, sideMenuTabs } from "../utils/static";

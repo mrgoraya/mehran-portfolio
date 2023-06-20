@@ -16,6 +16,7 @@ const HeaderImage = ({ navSize }: HeaderImageProp) => {
       verticalAlign="top"
       borderRadius="50%"
       border="5px solid #fff"
+      transition="width 250ms ease"
     >
       <Image src={mehranImage}></Image>
     </Box>
