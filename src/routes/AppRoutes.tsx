@@ -1,7 +1,7 @@
 import { Routes } from "react-router-dom";
 import { Route } from "react-router";
 
-import { routes } from "./routes";
+import { routes } from "../utils/routes";
 import AboutMe from "../pages/aboutMe";
 import Blog from "../pages/blog";
 import ContactMe from "../pages/contactMe";

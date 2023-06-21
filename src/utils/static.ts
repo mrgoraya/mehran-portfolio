@@ -9,7 +9,7 @@ import {
   FaRegIdBadge,
 } from "react-icons/fa";
 
-import { routes } from "../routes/routes";
+import { routes } from "./routes";
 import { SideBarSocialIcons, SideBarTab } from "./sideBarInterface";
 
 export const portfolioOwnerName = "Mehran Rasheed";
