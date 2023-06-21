@@ -1,13 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import HomePageText from "./HomePageText";
+import HomePageImage from "./HomePageImage";
+import { ColorModeProps } from "../../utils/colorMode";
 
-const Home = () => {
+const Home = ({ colorMode }: ColorModeProps) => {
   return (
     <Box display="flex" height="90vh" alignItems="center">
       <HomePageText />
-      <Box flex="1" flexBasis="0">
-        Picture
-      </Box>
+      <HomePageImage colorMode={colorMode} />
     </Box>
   );
 };

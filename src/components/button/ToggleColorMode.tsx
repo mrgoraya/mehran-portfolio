@@ -1,9 +1,15 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Button, useColorMode } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
-const ToggleColorMode = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+type ToggleColorModeProps = {
+  toggleColorMode: () => void;
+  colorMode: string;
+};
 
+const ToggleColorMode = ({
+  colorMode,
+  toggleColorMode,
+}: ToggleColorModeProps) => {
   return (
     <Button
       onClick={() => toggleColorMode()}
