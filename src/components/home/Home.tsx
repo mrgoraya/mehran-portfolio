@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import HomePageText from "./HomePageText";
 import HomePageImage from "./HomePageImage";
-import { ColorModeProps } from "../../utils/colorMode";
+import { ColorModeProps } from "../../types/colorMode";
 
 const Home = ({ colorMode }: ColorModeProps) => {
   return (

@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { ColorModeProps } from "../../utils/colorMode";
+import { ColorModeProps } from "../../types/colorMode";
 
 // TODO: there is bug for the overflow in the circle
 

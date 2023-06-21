@@ -1,7 +1,7 @@
 import { Icon } from "@chakra-ui/react";
 
 import { color } from "../../styles/color";
-import { SideBarSocialIcons } from "../../utils/sideBarInterface";
+import { SideBarSocialIcons } from "../../types/sideBarInterface";
 
 type SideBarFooterProps = {
   socialIcons: SideBarSocialIcons;

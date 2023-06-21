@@ -8,7 +8,7 @@ import ContactMe from "../pages/contactMe";
 import HomePage from "../pages/home";
 import Portfolio from "../pages/portfolio";
 import Services from "../pages/services";
-import { ColorModeProps } from "../utils/colorMode";
+import { ColorModeProps } from "../types/colorMode";
 
 const AppRoutes = ({ colorMode }: ColorModeProps) => {
   return (

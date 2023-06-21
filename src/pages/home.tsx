@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import Home from "../components/home/Home";
-import { ColorModeProps } from "../utils/colorMode";
+import { ColorModeProps } from "../types/colorMode";
 
 const HomePage = ({ colorMode }: ColorModeProps) => {
   return (

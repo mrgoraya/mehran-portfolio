@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 import { routes } from "./routes";
-import { SideBarSocialIcons, SideBarTab } from "./sideBarInterface";
+import { SideBarSocialIcons, SideBarTab } from "../types/sideBarInterface";
 
 export const portfolioOwnerName = "Mehran Rasheed";
 

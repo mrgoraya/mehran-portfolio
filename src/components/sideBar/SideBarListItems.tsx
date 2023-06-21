@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { HStack, Icon, ListItem, Text } from "@chakra-ui/react";
 
 import { color } from "../../styles/color";
-import { SideBarTab } from "../../utils/sideBarInterface";
+import { SideBarTab } from "../../types/sideBarInterface";
 
 type SideBarListItemProps = {
   sideBarTab: SideBarTab;
