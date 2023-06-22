@@ -1,9 +1,9 @@
 import { Fragment } from "react";
+import { Box, useColorMode } from "@chakra-ui/react";
 
 import AppRoutes from "./routes/AppRoutes";
 import ToggleColorMode from "./components/button/ToggleColorMode";
 import SideBar from "./pages/sideBar";
-import { Box, useColorMode } from "@chakra-ui/react";
 
 export const App = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -15,7 +15,7 @@ export const App = () => {
       />
       <Box display="flex">
         <SideBar />
-        <Box margin="1rem">
+        <Box>
           <AppRoutes colorMode={colorMode} />
         </Box>
       </Box>
