@@ -13,9 +13,9 @@ export const App = () => {
         colorMode={colorMode}
         toggleColorMode={toggleColorMode}
       />
-      <Box display="flex">
+      <Box id="mainContainer" display="flex">
         <SideBar />
-        <Box>
+        <Box w="100%">
           <AppRoutes colorMode={colorMode} />
         </Box>
       </Box>

@@ -20,14 +20,11 @@ const SideBar = () => {
     }
   };
 
-  const handleTabs = (name: string) => {
-    console.log(name);
-  };
   return (
     <Flex
       pos="sticky"
       h="100vh"
-      w={navSize === "small" ? "4.5rem" : "25rem"}
+      w={navSize === "small" ? "4.5rem" : "16.625rem"}
       flexDir="column"
       justifyContent="space-between"
       boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.5)"
@@ -78,7 +75,6 @@ const SideBar = () => {
               <SideBarListItems
                 key={sideBarTab.id}
                 sideBarTab={sideBarTab}
-                onClick={handleTabs}
                 navSize={navSize}
               />
             );

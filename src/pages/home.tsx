@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { ColorModeProps } from "../types/colorMode";
 import HomePageText from "../components/home/HomePageText";
+import { color } from "../styles/color";
 
 const HomePage = ({ colorMode }: ColorModeProps) => {
   return (
@@ -19,7 +20,7 @@ const HomePage = ({ colorMode }: ColorModeProps) => {
         width: "95vh",
         height: "95vh",
         borderRadius: "50%",
-        background: colorMode === "dark" ? "#0b0b13" : "#f7f7ff",
+        background: colorMode === "dark" ? color.darkGray : color.lightCyan,
         zIndex: "-1",
       }}
     >

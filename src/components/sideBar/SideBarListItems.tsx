@@ -6,15 +6,10 @@ import { SideBarTab } from "../../types/sideBarInterface";
 
 type SideBarListItemProps = {
   sideBarTab: SideBarTab;
-  onClick: (name: string) => void;
   navSize: string;
 };
 
-const SideBarListItems = ({
-  sideBarTab,
-  onClick,
-  navSize,
-}: SideBarListItemProps) => {
+const SideBarListItems = ({ sideBarTab, navSize }: SideBarListItemProps) => {
   return (
     <ListItem
       width="100%"
@@ -31,7 +26,6 @@ const SideBarListItems = ({
           textTransform="uppercase"
           lineHeight="1.125rem"
           _hover={{ color: color.green, cursor: "pointer" }}
-          onClick={() => onClick(sideBarTab.name)}
         >
           <Icon fontSize="1.45rem" fontWeight="300">
             <sideBarTab.icon />
