@@ -51,7 +51,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.0.0",
     "renovate": "^35.133.0"
   }
 }
